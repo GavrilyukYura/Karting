@@ -1,0 +1,27 @@
+.button {
+  box-sizing: border-box;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 48px;
+  gap: 10px;
+  width: 286px;
+  height: 59px;
+
+  background: linear-gradient(180deg, #00D8A4 0%, #009470 100%);
+  box-shadow: 6px 6px 17px rgba(3, 23, 32, 0.46);
+  border-radius: 20px 4px;
+  
+  transition: background-color 0.3s;
+
+  &:hover {
+    background: linear-gradient(180deg, #02f5bc 0%, #009470 100%);
+  }
+
+  &:active {
+    background: linear-gradient(180deg, #037459 0%, #014d3a 100%);;
+  }
+}

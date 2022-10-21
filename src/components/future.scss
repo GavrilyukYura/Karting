@@ -1,0 +1,43 @@
+.future {
+  background-image: url(../images/future.svg);
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 0;
+
+    @include onTablet {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    @include onMobile {
+      grid-template-columns: 1fr;
+    };
+  }
+
+  &__item {
+    height: 178px;
+    border: 1px solid #00D8A4;
+    box-shadow: 8px 8px 72px rgba(0, 2, 7, 0.1);
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.5;
+  }
+}

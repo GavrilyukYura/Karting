@@ -1,0 +1,17 @@
+.section {
+  position: relative;
+  box-shadow: inset 0 0 25px rgba(3, 22, 30, 50), inset 0 0 25px rgba(3, 22, 30, 50), inset 0 0 25px rgb(3, 22, 30), inset 0 0 25px rgb(3, 22, 30);
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 115px;
+
+  @include onTablet {
+    padding: 0 70px;
+  }
+
+  @include onMobile {
+    padding: 0 20px;
+  };
+}

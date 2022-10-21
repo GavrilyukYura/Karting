@@ -2,3 +2,26 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+
+body {
+  margin: 0;
+  background-color: rgb(3, 22, 30);
+  cursor: default;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  font-family: 'Gilroy';
+  font-style: normal;
+  scroll-behavior: smooth;
+  color: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+

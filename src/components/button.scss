@@ -1,6 +1,7 @@
 .button {
   box-sizing: border-box;
   cursor: pointer;
+  z-index: 10;
 
   display: flex;
   flex-direction: row;
@@ -11,17 +12,16 @@
   width: 286px;
   height: 59px;
 
-  background: linear-gradient(180deg, #00D8A4 0%, #009470 100%);
+  background-color: #00D8A4;
   box-shadow: 6px 6px 17px rgba(3, 23, 32, 0.46);
   border-radius: 20px 4px;
-  
   transition: background-color 0.3s;
 
   &:hover {
-    background: linear-gradient(180deg, #02f5bc 0%, #009470 100%);
+    background-color: #02f5bc;
   }
 
   &:active {
-    background: linear-gradient(180deg, #037459 0%, #014d3a 100%);;
+    background-color: #037459;
   }
 }

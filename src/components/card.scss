@@ -99,5 +99,9 @@
 
     background: rgba(0, 216, 164, 0.59);
     box-shadow: 0px 4px 150px 100px #00D8A4;
+
+    @include onMobile {
+      box-shadow: 0px 4px 100px 50px #00D8A4;
+    }
   }
 }

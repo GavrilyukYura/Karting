@@ -5,15 +5,18 @@
 
 
   @include onMobile {
-    background-position: bottom center;
+    background-position: center;
+    height: max-content;
   }
 
   &__text {
     font-size: 17px;
     line-height: 20px;
-
-    
     margin-bottom: 40px;
+
+    @include onMobile {
+      margin-bottom: 30px;
+    }
   }
 
   &__content {

@@ -1,9 +1,9 @@
 .header {
   position: relative;
   background-image: url(../images/header.png);
-  max-width: 100%;
   box-shadow: inset 0 0 25px rgba(3, 22, 30, 50), inset 0 0 25px rgba(3, 22, 41, 50), inset 0 0 25px rgba(3, 22, 41, 50), inset 0 0 25px rgba(4, 30, 41, 50);
   padding: 0 115px;
+  background-size: cover;
 
   @include onTablet {
     padding: 0 70px;
@@ -13,14 +13,13 @@
     padding: 0 20px;
   };
 
-  
   &__frame {
     position: absolute;
     left: 0;
     right: 0;
     width: 100%;
 
-    @include onMobile {
+    @include onTablet {
       display: none;
     }
   }
@@ -28,10 +27,14 @@
   &__top-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 50%;
     background-size: cover;
     width: 100%;
-    height: 950px;
+    height: 100vh;
+
+    @include onMobile {
+      gap: 40%;
+    }
   }
 
   &__bottom-content {
@@ -41,7 +44,6 @@
     align-items: center;
     z-index: 3;
     padding-bottom: 40px;
-    margin-top: -150px;
     gap: 35px;
   }
 
